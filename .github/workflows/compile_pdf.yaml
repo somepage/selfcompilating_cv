@@ -1,0 +1,22 @@
+name: compile PDF
+
+on:
+   push:
+jobs:
+  compile_pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: xu-cheng/latex-action@v2
+        with:
+         root_file: "cv.tex"
+      - name: Commit and push changes
+        run: |
+          export GITHUB_TOKEN=${{ github.token }}
+          git checkout ${{ env.GITHUB_REF_NAME }}
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add cv.pdf
+          git commit -m "compile PDF file"
+          git push origin ${{ env.GITHUB_REF_NAME }}
+        shell: bash
