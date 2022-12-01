@@ -1,4 +1,4 @@
-# autoCV
+# selfcompilating_cv
 
 A clean CV template in LaTeX along with a GitHub action that complies the *.tex file and commits and pushes a new PDF version when new changes are pushed to the repo
 
