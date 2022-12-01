@@ -14,7 +14,7 @@ The template is designed to be clean with sections for
 - Fork this repo (you can use the `Use this template` button)
 - Modify the `cv.tex` file and push changes to your repo
 
-After GitHub Actions commit, your CV will be available at: https://github.com/username/selfcompilating_cv/cv.pdf
+After GitHub Actions commit, your CV will be available at: https://github.com/somepage/selfcompilating_cv/blob/main/cv.pdf
 
 ## Issues
 Please start a new discussion or issue if you encounter problems
